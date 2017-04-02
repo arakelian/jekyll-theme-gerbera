@@ -1,0 +1,102 @@
+.prism {
+  @include code-font();
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+
+  -moz-tab-size: 2;
+  -o-tab-size: 2;
+  tab-size: 2;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+
+  position: relative;
+}
+
+
+/* Comment */
+.prism .comment,
+.cm-comment {
+  color: #999;
+}
+
+/* Punctuation */
+.prism .punctuation,
+.cm-punctuation {
+  color: #555;
+}
+
+/* Keyword */
+.prism .keyword,
+.cm-keyword {
+  color: #B11A04;
+}
+
+/* OperationName, FragmentName */
+.prism .constant,
+.cm-def {
+  color: #D2054E;
+}
+
+/* FieldName */
+.prism .attr-name,
+.cm-property {
+  color: #1F61A0;
+}
+
+/* FieldAlias */
+.cm-qualifier {
+  color: #1C92A9;
+}
+
+/* ArgumentName and ObjectFieldName */
+.cm-attribute {
+  color: #8B2BB9;
+}
+
+/* Number */
+.prism .number,
+.cm-number {
+  color: #2882F9;
+}
+
+/* String */
+.prism .string,
+.cm-string {
+  color: #D64292;
+}
+
+/* Boolean */
+.prism .boolean,
+.cm-builtin {
+  color: #D47509;
+}
+
+/* EnumValue */
+.prism .enum,
+.cm-string-2 {
+  color: #0B7FC7;
+}
+
+/* Variable */
+.prism .variable,
+.cm-variable {
+  color: #397D13;
+}
+
+/* Directive */
+.prism .function,
+.cm-meta {
+  color: #B33086;
+}
+
+/* Type */
+.prism .type-name,
+.cm-atom {
+  color: #CA9800;
+}

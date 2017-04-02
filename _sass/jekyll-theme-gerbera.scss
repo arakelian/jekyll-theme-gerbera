@@ -1,0 +1,31 @@
+/*
+ *          _      __         ____      __  __                                  __               
+ *         (_)__  / /____  __/ / /     / /_/ /_  ___  ____ ___  ___        ____/ /___  __________
+ *        / / _ \/ //_/ / / / / /_____/ __/ __ \/ _ \/ __ `__ \/ _ \______/ __  / __ \/ ___/ ___/
+ *       / /  __/ ,< / /_/ / / /_____/ /_/ / / /  __/ / / / / /  __/_____/ /_/ / /_/ / /__(__  ) 
+ *    __/ /\___/_/|_|\__, /_/_/      \__/_/ /_/\___/_/ /_/ /_/\___/      \__,_/\____/\___/____/  
+ *   /___/          /____/                                                                     
+ *
+ * Designed, built, and released under MIT license by Greg Arakelian. 
+ * Learn more at https://github.com/arakelian/jekyll-theme-gerbera
+ */
+
+$base-font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+$base-font-size:   18px !default;
+$base-font-weight: 300 !default;
+$base-line-height: $base-font-size * 1.6 !default;
+
+$header-font-family: 'Rubik', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+$header-font-weight: $base-font-weight;
+
+$small-font-size:  $base-font-size * 0.875 !default;
+
+@import
+  "_variables",
+  "_base",
+  "_docs",
+  "_codemirror",
+  "_algolia", 
+  "_syntax",
+  "_index"
+;
