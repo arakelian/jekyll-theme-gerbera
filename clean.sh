@@ -1,10 +1,8 @@
 #!/bin/bash
-if [ -x clean.sh ]; then
-    clean.sh
-fi
-
-echo "Installing"
-bundle install
-
-echo "Launching preview"
-bundle exec rake preview
+echo "Cleaning"
+rm -rf _site
+rm -rf .jekyll-metadata
+rm -rf .sass-cache
+rm -rf example/_site
+rm -rf example/.jekyll-metadata
+rm -rf example/.sass-cache
