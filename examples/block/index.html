@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>
+      Block Elements &middot; Gerbera Theme
+    </title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/main.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300|Roboto:300">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,400i,600">
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="256x256 128x128 48x48 32x32 16x16" href="/assets/gerbera.icns">
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="Gerbera Theme" href="/feed.xml">
+  </head>
+  <body>
+    <header>
+      <section>
+        <a class="nav-home" href="/"><img class="nav-logo" src="/assets/img/logo.svg" width="30" height="30">Gerbera Theme</a>
+        <nav>
+          <a href="/learn/">Learn</a>
+          <a href="/examples/">Examples</a>
+          <a href="/blog/">Blog</a>
+          <a href="https://github.com/arakelian/jekyll-theme-gerbera" target="_blank" rel="noopener noreferrer">Github</a>
+        </nav>
+        <div class="algolia-search-wrapper">
+          <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;">
+            <input type="text" id="algolia-search-input" placeholder="Search docs..." class="aa-input" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-labelledby="algolia-search-input" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top;">
+            <pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Rubik, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 300; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre>
+            <span class="aa-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;">
+              <div class="aa-dataset-1"></div>
+            </span>
+          </span>
+        </div>
+      </section>
+    </header>
+    <section>
+      <div class="documentationContent">
+        <div class="inner-content">
+          <h1>Block Elements</h1>
+          <h2 id="paragraphs-and-line-breaks">Paragraphs and Line Breaks</h2>
+          <p>A paragraph is simply one or more consecutive lines of text, separated by one or more blank lines. (A blank 
+            line is any line that looks like a blank line — a line containing nothing but spaces or tabs is 
+            considered blank.) Normal paragraphs should not be indented with spaces or tabs.</p>
+          <p>The implication of the “one or more consecutive lines of text” rule is that Markdown supports “hard-wrapped” 
+            text paragraphs. This differs significantly from most other text-to-HTML formatters (including Movable 
+            Type’s “Convert Line Breaks” option) which translate every line break character in a paragraph into a <code class="highlighter-rouge">&lt;br&gt;</code> tag.</p>
+          <p>When you do want to insert a <code class="highlighter-rouge">&lt;br&gt;</code> break tag using Markdown, you end a line with two or more spaces, then type return.</p>
+          <p>Yes, this takes a tad more effort to create a <code class="highlighter-rouge">&lt;br&gt;</code>, but a simplistic “every line break is a <code class="highlighter-rouge">&lt;br&gt;</code>” rule 
+            wouldn’t work for Markdown. Markdown’s email-style blockquoting and multi-paragraph list items work best — 
+            and look better — when you format them with hard breaks.</p>
+          <h2 id="blockquotes">Blockquotes</h2>
+          <p>Markdown uses email-style &gt; characters for blockquoting. If you’re familiar with quoting passages of text
+            in an email message, then you know how to create a blockquote in Markdown.</p>
+          <p>It looks best if you hard wrap the text and put a &gt; before every line:</p>
+          <blockquote>
+            <p>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+              consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+              Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p>
+            <p>Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+              id sem consectetuer libero luctus adipiscing.</p>
+          </blockquote>
+          <h3 id="nested-blockquotes">Nested Blockquotes</h3>
+          <p>Blockquotes can contain other Markdown elements, including headers, lists, and code blocks:</p>
+          <div class="language-markdown highlighter-rouge">
+            <pre class="highlight"><code><span class="gt">&gt; This is the first level of quoting.</span>
+<span class="gt">&gt;</span>
+<span class="gt">&gt; &gt; This is nested blockquote.</span>
+<span class="gt">&gt;</span>
+<span class="gt">&gt; Back to the first level.</span>
+</code></pre>
+          </div>
+          <p>Produces the following:</p>
+          <blockquote>
+            <p>This is the first level of quoting.</p>
+            <blockquote>
+              <p>This is nested blockquote.</p>
+            </blockquote>
+            <p>Back to the first level.</p>
+          </blockquote>
+          <h2 id="lists">Lists</h2>
+          <p>Markdown supports ordered (numbered) and unordered (bulleted) lists.</p>
+          <p>Unordered lists use asterisks, pluses, and hyphens — interchangably — as list markers:</p>
+          <ul>
+            <li>Asterisks <code class="highlighter-rouge">*</code></li>
+            <li>Pluses <code class="highlighter-rouge">+</code></li>
+            <li>Hyphens <code class="highlighter-rouge">-</code></li>
+          </ul>
+          <p>Ordered lists use numbers followed by periods:</p>
+          <ol>
+            <li>Bird</li>
+            <li>McHale</li>
+            <li>Parish</li>
+          </ol>
+          <p>It’s important to note that the actual numbers you use to mark the list have no effect on the HTML output Markdown produces.</p>
+          <h3 id="multiple-paragraphs">Multiple Paragraphs</h3>
+          <p>List items may consist of multiple paragraphs. Each subsequent paragraph in a list item must be indented by either 4 spaces or one tab:</p>
+          <ol>
+            <li>
+              <p>This is a list item with two paragraphs. Lorem ipsum dolor
+                sit amet, consectetuer adipiscing elit. Aliquam hendrerit
+                mi posuere lectus.</p>
+              <p>Vestibulum enim wisi, viverra nec, fringilla in, laoreet
+                vitae, risus. Donec sit amet nisl. Aliquam semper ipsum
+                sit amet velit.</p>
+            </li>
+            <li>
+              <p>Suspendisse id sem consectetuer libero luctus adipiscing.</p>
+            </li>
+          </ol>
+          <h3 id="blockquotes-1">Blockquotes</h3>
+          <p>To put a blockquote within a list item, the blockquote’s &gt; delimiters need to be indented:</p>
+          <ul>
+            <li>
+              <p>A list item with a blockquote:</p>
+              <blockquote>
+                <p>This is a blockquote
+                  inside a list item.</p>
+              </blockquote>
+            </li>
+          </ul>
+          <p>To put a code block within a list item, the code block needs to be indented twice — 8 spaces or two tabs:</p>
+          <ul>
+            <li>
+              <p>A list item with a code block:</p>
+              <div class="highlighter-rouge">
+                <pre class="highlight"><code>&lt;code goes here&gt;
+</code></pre>
+              </div>
+            </li>
+          </ul>
+          <h2 id="code-blocks">Code Blocks</h2>
+          <p>Pre-formatted code blocks are used for writing about programming or markup source code. 
+            Rather than forming normal paragraphs, the lines of a code block are interpreted literally. 
+            Markdown wraps a code block in both <code class="highlighter-rouge">&lt;pre&gt;</code> and <code class="highlighter-rouge">&lt;code&gt;</code> tags.</p>
+          <p>This is a normal paragraph:</p>
+          <div class="highlighter-rouge">
+            <pre class="highlight"><code>This is a code block.
+</code></pre>
+          </div>
+          <p>A code block continues until it reaches a line that is not indented.</p>
+          <p>Within a code block, ampersands (&amp;) and angle brackets (&lt; and &gt;) are automatically converted into 
+            HTML entities. This makes it very easy to include example HTML source code using Markdown — 
+            just paste it and indent it, and Markdown will handle the hassle of encoding the ampersands 
+            and angle brackets.</p>
+          <p>This text is appears exactly like this in the source file:</p>
+          <div class="highlighter-rouge">
+            <pre class="highlight"><code>&lt;div class="footer"&gt;
+    &amp;copy; 2004 Foo Corporation
+&lt;/div&gt;
+</code></pre>
+          </div>
+          <h2 id="horizontal-rules">Horizontal Rules</h2>
+          <p>You can produce a horizontal rule tag (<code class="highlighter-rouge">&lt;hr&gt;</code>) by placing three or more hyphens, asterisks, or
+            underscores on a line by themselves.</p>
+          <hr />
+          <p>If you wish, you may use spaces between the hyphens or asterisks.</p>
+          <a class="read-next" href="/examples/span/">
+            <span class="read-next-continue">Continue Reading →</span>
+            <span class="read-next-title">Span Elements</span>
+          </a>
+        </div>
+        <div class="nav-docs">
+          <div>
+            <h3>EXAMPLES</h3>
+            <ul>
+              <!-- 2017-04-08 08:57:37 -0400 -->
+              <li>
+                <a class="active" href="/examples/">Overview</a>
+                <ul>
+                  <li><a href="/examples/#special-characters">Special Characters</a></li>
+                  <li><a href="/examples/#backslash-escapes">Backslash Escapes</a></li>
+                </ul>
+              </li>
+              <!-- 2017-04-08 08:57:37 -0400 -->
+              <li>
+                <a class="active" href="/examples/block/">Block Elements</a>
+                <ul>
+                  <li><a href="/examples/block/#paragraphs-and-line-breaks">Paragraphs and Line Breaks</a></li>
+                  <li><a href="/examples/block/#blockquotes">Blockquotes</a></li>
+                  <li><a href="/examples/block/#lists">Lists</a></li>
+                  <li><a href="/examples/block/#code-blocks">Code Blocks</a></li>
+                  <li><a href="/examples/block/#horizontal-rules">Horizontal Rules</a></li>
+                </ul>
+              </li>
+              <!-- 2017-04-08 08:57:37 -0400 -->
+              <li>
+                <a class="active" href="/examples/span/">Span Elements</a>
+                <ul>
+                  <li><a href="/examples/span/#links">Links</a></li>
+                  <li><a href="/examples/span/#emphasis">Emphasis</a></li>
+                  <li><a href="/examples/span/#html">HTML</a></li>
+                  <li><a href="/examples/span/#code">Code</a></li>
+                  <li><a href="/examples/span/#images">Images</a></li>
+                </ul>
+              </li>
+              <!-- 2017-04-08 08:57:37 -0400 -->
+              <li>
+                <a class="active" href="/examples/highlighter/">Syntax Highlighter</a>
+                <ul>
+                  <li><a href="/examples/highlighter/#apache">Apache</a></li>
+                  <li><a href="/examples/highlighter/#c">C</a></li>
+                  <li><a href="/examples/highlighter/#gradle">Gradle</a></li>
+                  <li><a href="/examples/highlighter/#groovy">Groovy</a></li>
+                  <li><a href="/examples/highlighter/#html">HTML</a></li>
+                  <li><a href="/examples/highlighter/#http">HTTP</a></li>
+                  <li><a href="/examples/highlighter/#ini-files">.INI files</a></li>
+                  <li><a href="/examples/highlighter/#java">Java</a></li>
+                  <li><a href="/examples/highlighter/#javascript">Javascript</a></li>
+                  <li><a href="/examples/highlighter/#json">Json</a></li>
+                  <li><a href="/examples/highlighter/#markdown">Markdown</a></li>
+                  <li><a href="/examples/highlighter/#objective-c">Objective C</a></li>
+                  <li><a href="/examples/highlighter/#php">PHP</a></li>
+                  <li><a href="/examples/highlighter/#protobuf">Protobuf</a></li>
+                  <li><a href="/examples/highlighter/#ruby">Ruby</a></li>
+                  <li><a href="/examples/highlighter/#scala">Scala</a></li>
+                  <li><a href="/examples/highlighter/#sass">SASS</a></li>
+                  <li><a href="/examples/highlighter/#scss">SCSS</a></li>
+                  <li><a href="/examples/highlighter/#shell">Shell</a></li>
+                  <li><a href="/examples/highlighter/#sql">SQL</a></li>
+                  <li><a href="/examples/highlighter/#swift">Swift</a></li>
+                  <li><a href="/examples/highlighter/#visual-basic">Visual Basic</a></li>
+                  <li><a href="/examples/highlighter/#xml">XML</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

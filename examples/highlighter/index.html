@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>
+      Syntax Highlighter &middot; Gerbera Theme
+    </title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/main.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300|Roboto:300">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,400i,600">
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="256x256 128x128 48x48 32x32 16x16" href="/assets/gerbera.icns">
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="Gerbera Theme" href="/feed.xml">
+  </head>
+  <body>
+    <header>
+      <section>
+        <a class="nav-home" href="/"><img class="nav-logo" src="/assets/img/logo.svg" width="30" height="30">Gerbera Theme</a>
+        <nav>
+          <a href="/learn/">Learn</a>
+          <a href="/examples/">Examples</a>
+          <a href="/blog/">Blog</a>
+          <a href="https://github.com/arakelian/jekyll-theme-gerbera" target="_blank" rel="noopener noreferrer">Github</a>
+        </nav>
+        <div class="algolia-search-wrapper">
+          <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;">
+            <input type="text" id="algolia-search-input" placeholder="Search docs..." class="aa-input" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-labelledby="algolia-search-input" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top;">
+            <pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Rubik, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 15px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 300; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: auto; text-transform: none;"></pre>
+            <span class="aa-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;">
+              <div class="aa-dataset-1"></div>
+            </span>
+          </span>
+        </div>
+      </section>
+    </header>
+    <section>
+      <div class="documentationContent">
+        <div class="inner-content">
+          <h1>Syntax Highlighter</h1>
+          <h2 id="apache">Apache</h2>
+          <div class="language-apache highlighter-rouge">
+            <pre class="highlight"><code><span class="nc">AddEncoding</span> x-gzip .gz
+<span class="nc">RewriteCond</span> %{HTTP:Accept-Encoding} gzip
+<span class="nc">RewriteCond</span> %{REQUEST_FILENAME}.gz -f
+<span class="nc">RewriteRule</span> ^(.*)$ $1.gz [QSA,L]
+<span class="p">&lt;</span><span class="nl">FilesMatch</span><span class="sr"> \.css\.gz$</span><span class="p">&gt;
+</span>  <span class="nc">ForceType</span> text/css
+  <span class="nc">Header</span> <span class="ss">append</span> Vary Accept-Encoding
+<span class="p">&lt;/</span><span class="nl">FilesMatch</span><span class="p">&gt;
+</span></code></pre>
+          </div>
+          <h2 id="c">C</h2>
+          <div class="language-c highlighter-rouge">
+            <pre class="highlight"><code><span class="cp">#include "ruby/ruby.h"
+</span>
+<span class="k">static</span> <span class="kt">int</span>
+<span class="nf">clone_method_i</span><span class="p">(</span><span class="n">st_data_t</span> <span class="n">key</span><span class="p">,</span> <span class="n">st_data_t</span> <span class="n">value</span><span class="p">,</span> <span class="n">st_data_t</span> <span class="n">data</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">clone_method</span><span class="p">((</span><span class="n">VALUE</span><span class="p">)</span><span class="n">data</span><span class="p">,</span> <span class="p">(</span><span class="n">ID</span><span class="p">)</span><span class="n">key</span><span class="p">,</span> <span class="p">(</span><span class="k">const</span> <span class="n">rb_method_entry_t</span> <span class="o">*</span><span class="p">)</span><span class="n">value</span><span class="p">);</span>
+    <span class="k">return</span> <span class="n">ST_CONTINUE</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+          </div>
+          <h2 id="gradle">Gradle</h2>
+          <div class="language-gradle highlighter-rouge">
+            <pre class="highlight"><code><span class="n">apply</span> <span class="nl">plugin:</span> <span class="s1">'java'</span>
+
+<span class="k">repositories</span> <span class="o">{</span>
+  <span class="n">jcenter</span><span class="o">()</span>
+<span class="o">}</span>
+
+<span class="k">dependencies</span> <span class="o">{</span>
+  <span class="n">compile</span> <span class="s1">'org.openjdk.jmh:jmh-core:1.12'</span>
+  <span class="n">compile</span> <span class="s1">'org.openjdk.jmh:jmh-generator-annprocess:1.12'</span>
+<span class="o">}</span>
+</code></pre>
+          </div>
+          <h2 id="groovy">Groovy</h2>
+          <div class="language-groovy highlighter-rouge">
+            <pre class="highlight"><code><span class="kd">class</span> <span class="nc">Greet</span> <span class="o">{</span>
+  <span class="kt">def</span> <span class="n">name</span>
+  <span class="nf">Greet</span><span class="o">(</span><span class="n">who</span><span class="o">)</span> <span class="o">{</span> <span class="n">name</span> <span class="o">=</span> <span class="n">who</span><span class="o">[</span><span class="mi">0</span><span class="o">].</span><span class="na">toUpperCase</span><span class="o">()</span> <span class="o">+</span>
+                      <span class="n">who</span><span class="o">[</span><span class="mi">1</span><span class="o">..-</span><span class="mi">1</span><span class="o">]</span> <span class="o">}</span>
+  <span class="kt">def</span> <span class="nf">salute</span><span class="o">()</span> <span class="o">{</span> <span class="n">println</span> <span class="s2">"Hello $name!"</span> <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="n">g</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Greet</span><span class="o">(</span><span class="s1">'world'</span><span class="o">)</span>  <span class="c1">// create object</span>
+<span class="n">g</span><span class="o">.</span><span class="na">salute</span><span class="o">()</span>              <span class="c1">// output "Hello World!"</span>
+</code></pre>
+          </div>
+          <h2 id="html">HTML</h2>
+          <div class="language-html highlighter-rouge">
+            <pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;&lt;title&gt;</span>Title!<span class="nt">&lt;/title&gt;&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">id=</span><span class="s">"foo"</span><span class="nt">&gt;</span>Hello, World!<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span><span class="nt">&lt;/script&gt;</span>
+    <span class="nt">&lt;style </span><span class="na">type=</span><span class="s">"text/css"</span><span class="nt">&gt;</span><span class="nf">#foo</span> <span class="p">{</span> <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span> <span class="p">}</span><span class="nt">&lt;/style&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
+          </div>
+          <h2 id="http">HTTP</h2>
+          <div class="language-http highlighter-rouge">
+            <pre class="highlight"><code><span class="nf">POST</span> <span class="nn">/demo/submit/</span> <span class="k">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+<span class="na">Host</span><span class="p">:</span> <span class="s">rouge.jneen.net</span>
+<span class="na">Cache-Control</span><span class="p">:</span> <span class="s">max-age=0</span>
+<span class="na">Origin</span><span class="p">:</span> <span class="s">http://rouge.jayferd.us</span>
+<span class="na">User-Agent</span><span class="p">:</span> <span class="s">Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2)</span>
+<span class="s">    AppleWebKit/535.7 (KHTML, like Gecko) Chrome/16.0.912.63 Safari/535.7</span>
+<span class="na">Content-Type</span><span class="p">:</span> <span class="s">application/json</span>
+<span class="na">Accept</span><span class="p">:</span> <span class="s">text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8</span>
+<span class="na">Referer</span><span class="p">:</span> <span class="s">http://pygments.org/</span>
+<span class="na">Accept-Encoding</span><span class="p">:</span> <span class="s">gzip,deflate,sdch</span>
+<span class="na">Accept-Language</span><span class="p">:</span> <span class="s">en-US,en;q=0.8</span>
+<span class="na">Accept-Charset</span><span class="p">:</span> <span class="s">windows-949,utf-8;q=0.7,*;q=0.3</span>
+
+<span class="p">{</span><span class="nt">"name"</span><span class="p">:</span><span class="s2">"test"</span><span class="p">,</span><span class="nt">"lang"</span><span class="p">:</span><span class="s2">"text"</span><span class="p">,</span><span class="nt">"boring"</span><span class="p">:</span><span class="kc">true</span><span class="p">}</span><span class="w">
+</span></code></pre>
+          </div>
+          <h2 id="ini-files">.INI files</h2>
+          <div class="language-ini highlighter-rouge">
+            <pre class="highlight"><code><span class="c">; last modified 1 April 2001 by John Doe
+</span><span class="nn">[owner]</span>
+<span class="py">name</span><span class="p">=</span><span class="s">John Doe</span>
+<span class="py">organization</span><span class="p">=</span><span class="s">Acme Widgets Inc.</span>
+</code></pre>
+          </div>
+          <h2 id="java">Java</h2>
+          <div class="language-java highlighter-rouge">
+            <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">java</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"Hello World"</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre>
+          </div>
+          <h2 id="javascript">Javascript</h2>
+          <div class="language-javascript highlighter-rouge">
+            <pre class="highlight"><code><span class="c1">// Set variables</span>
+<span class="kd">var</span> <span class="nx">myBankBalance</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">output</span> <span class="o">=</span> <span class="s2">""</span><span class="p">;</span>
+
+<span class="c1">// Do the 'while' loop</span>
+<span class="k">while</span> <span class="p">(</span><span class="nx">myBankBalance</span> <span class="o">&lt;=</span> <span class="mi">10</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">myBankBalance</span> <span class="o">===</span> <span class="mi">5</span><span class="p">)</span> <span class="p">{</span> 
+    <span class="k">break</span><span class="p">;</span> 
+    <span class="p">}</span>
+  <span class="nx">output</span> <span class="o">+=</span> <span class="s2">"My bank balance is now $"</span> <span class="o">+</span> <span class="nx">myBankBalance</span> <span class="o">+</span> <span class="s2">"&lt;br&gt;"</span><span class="p">;</span>
+  <span class="nx">myBankBalance</span> <span class="o">++</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// Output results to the above HTML element</span>
+<span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">"msg"</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">output</span><span class="p">;</span>
+</code></pre>
+          </div>
+          <h2 id="json">Json</h2>
+          <div class="language-json highlighter-rouge">
+            <pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nt">"me"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Luke Skywalker"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+          </div>
+          <h2 id="markdown">Markdown</h2>
+          <div class="language-markdown highlighter-rouge">
+            <pre class="highlight"><code>Markdown has cool <span class="p">[</span><span class="nv">reference links</span><span class="p">][</span><span class="ss">ref 1</span><span class="p">]</span>
+and <span class="p">[</span><span class="nv">regular links too</span><span class="p">](</span><span class="sx">http://example.com</span><span class="p">)</span>
+
+<span class="p">[</span><span class="ss">ref 1</span><span class="p">]:</span> <span class="sx">http://example.com</span>
+</code></pre>
+          </div>
+          <h2 id="objective-c">Objective C</h2>
+          <div class="language-objective_c highlighter-rouge">
+            <pre class="highlight"><code><span class="k">@interface</span> <span class="nc">Person</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="p">{</span>
+  <span class="k">@public</span>
+  <span class="n">NSString</span> <span class="o">*</span><span class="n">name</span><span class="p">;</span>
+  <span class="k">@private</span>
+  <span class="kt">int</span> <span class="n">age</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">@property</span><span class="p">(</span><span class="n">copy</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">name</span><span class="p">;</span>
+<span class="k">@property</span><span class="p">(</span><span class="n">readonly</span><span class="p">)</span> <span class="kt">int</span> <span class="n">age</span><span class="p">;</span>
+
+<span class="k">-</span><span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="nf">initWithAge</span><span class="p">:(</span><span class="kt">int</span><span class="p">)</span><span class="nv">age</span><span class="p">;</span>
+<span class="k">@end</span>
+
+<span class="n">NSArray</span> <span class="o">*</span><span class="n">arrayLiteral</span> <span class="o">=</span> <span class="p">@[</span><span class="s">@"abc"</span><span class="p">,</span> <span class="mi">@1</span><span class="p">];</span>
+<span class="n">NSDictionary</span> <span class="o">*</span><span class="n">dictLiteral</span> <span class="o">=</span> <span class="p">@{</span>
+  <span class="s">@"hello"</span><span class="o">:</span> <span class="s">@"world"</span><span class="p">,</span>
+  <span class="s">@"goodbye"</span><span class="o">:</span> <span class="s">@"cruel world"</span>
+<span class="p">};</span>
+</code></pre>
+          </div>
+          <h2 id="php">PHP</h2>
+          <div class="language-php highlighter-rouge">
+            <pre class="highlight"><code><span class="cp">&lt;?php</span>
+  <span class="k">print</span><span class="p">(</span><span class="s2">"Hello </span><span class="si">{</span><span class="nv">$world</span><span class="si">}</span><span class="s2">"</span><span class="p">);</span>
+<span class="cp">?&gt;</span>
+</code></pre>
+          </div>
+          <h2 id="protobuf">Protobuf</h2>
+          <div class="language-protobuf highlighter-rouge">
+            <pre class="highlight"><code><span class="kd">message</span> <span class="nc">Person</span> <span class="p">{</span>
+  <span class="k">required</span> <span class="kt">string</span> <span class="na">name</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+  <span class="k">required</span> <span class="kt">int32</span> <span class="na">id</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+  <span class="k">optional</span> <span class="kt">string</span> <span class="na">email</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre>
+          </div>
+          <h2 id="ruby">Ruby</h2>
+          <div class="language-ruby highlighter-rouge">
+            <pre class="highlight"><code><span class="k">class</span> <span class="nc">Greeter</span>
+  <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="nb">name</span><span class="o">=</span><span class="s2">"World"</span><span class="p">)</span>
+    <span class="vi">@name</span> <span class="o">=</span> <span class="nb">name</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nf">say_hi</span>
+    <span class="nb">puts</span> <span class="s2">"Hi </span><span class="si">#{</span><span class="vi">@name</span><span class="si">}</span><span class="s2">!"</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre>
+          </div>
+          <h2 id="scala">Scala</h2>
+          <div class="language-scala highlighter-rouge">
+            <pre class="highlight"><code><span class="k">class</span> <span class="nc">Greeter</span><span class="o">(</span><span class="n">name</span><span class="k">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">"World"</span><span class="o">)</span> <span class="o">{</span>
+  <span class="k">def</span> <span class="n">sayHi</span><span class="o">()</span> <span class="o">{</span> <span class="n">println</span><span class="o">(</span><span class="s">"Hi "</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s">"!"</span><span class="o">)</span> <span class="o">}</span>
+<span class="o">}</span>
+</code></pre>
+          </div>
+          <h2 id="sass">SASS</h2>
+          <div class="language-sass highlighter-rouge">
+            <pre class="highlight"><code><span class="k">@for</span> <span class="nv">$i</span> <span class="ow">from</span> <span class="m">1</span> <span class="ow">through</span> <span class="m">3</span>
+  <span class="nc">.item-</span><span class="si">#{</span><span class="nv">$i</span><span class="si">}</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">2em</span> <span class="o">*</span> <span class="nv">$i</span>
+</code></pre>
+          </div>
+          <h2 id="scss">SCSS</h2>
+          <div class="language-scss highlighter-rouge">
+            <pre class="highlight"><code><span class="k">@for</span> <span class="nv">$i</span> <span class="ow">from</span> <span class="m">1</span> <span class="ow">through</span> <span class="m">3</span> <span class="p">{</span>
+  <span class="nc">.item-</span><span class="si">#{</span><span class="nv">$i</span><span class="si">}</span> <span class="p">{</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">2em</span> <span class="o">*</span> <span class="nv">$i</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+          </div>
+          <h2 id="shell">Shell</h2>
+          <div class="language-shell highlighter-rouge">
+            <pre class="highlight"><code><span class="c"># this while loop iterates over all lines of the file</span>
+<span class="k">while </span><span class="nb">read </span>LINE
+<span class="k">do</span>
+    <span class="c"># increase line counter </span>
+    <span class="o">((</span>count++<span class="o">))</span>
+    <span class="c"># write current line to a tmp file with name $file (not needed for counting)</span>
+    <span class="nb">echo</span> <span class="nv">$LINE</span> &gt; <span class="nv">$file</span>
+    <span class="c"># this checks the return code of echo (not needed for writing; just for demo)</span>
+    <span class="k">if</span> <span class="o">[</span> <span class="nv">$?</span> -ne 0 <span class="o">]</span> 
+     <span class="k">then </span><span class="nb">echo</span> <span class="s2">"Error in writing to file </span><span class="k">${</span><span class="nv">file</span><span class="k">}</span><span class="s2">; check its permissions!"</span>
+    <span class="k">fi
+done</span>
+</code></pre>
+          </div>
+          <h2 id="sql">SQL</h2>
+          <div class="language-sql highlighter-rouge">
+            <pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="nv">`users`</span> <span class="k">WHERE</span> <span class="nv">`user`</span><span class="p">.</span><span class="nv">`id`</span> <span class="o">=</span> <span class="mi">1</span>
+</code></pre>
+          </div>
+          <h2 id="swift">Swift</h2>
+          <div class="language-swift highlighter-rouge">
+            <pre class="highlight"><code><span class="c1">// Say hello to poeple</span>
+<span class="kd">func</span> <span class="nf">sayHello</span><span class="p">(</span><span class="nv">personName</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span> <span class="p">{</span>
+    <span class="k">let</span> <span class="nv">greeting</span> <span class="o">=</span> <span class="s">"Hello, "</span> <span class="o">+</span> <span class="n">personName</span> <span class="o">+</span> <span class="s">"!"</span>
+    <span class="k">return</span> <span class="n">greeting</span>
+<span class="p">}</span>
+</code></pre>
+          </div>
+          <h2 id="visual-basic">Visual Basic</h2>
+          <div class="language-vb highlighter-rouge">
+            <pre class="highlight"><code><span class="k">Private</span> <span class="k">Sub</span> <span class="nf">Form_Load</span><span class="p">()</span>
+    <span class="c1">' Execute a simple message box that says "Hello, World!"</span>
+    <span class="n">MsgBox</span> <span class="s">"Hello, World!"</span>
+<span class="k">End</span> <span class="k">Sub</span>
+</code></pre>
+          </div>
+          <h2 id="xml">XML</h2>
+          <div class="language-xml highlighter-rouge">
+            <pre class="highlight"><code><span class="cp">&lt;?xml version="1.0"?&gt;</span>
+<span class="nt">&lt;book</span> <span class="na">id=</span><span class="s">"bk101"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;author&gt;</span>Gambardella, Matthew<span class="nt">&lt;/author&gt;</span>
+   <span class="nt">&lt;title&gt;</span>XML Developer's Guide<span class="nt">&lt;/title&gt;</span>
+   <span class="nt">&lt;genre&gt;</span>Computer<span class="nt">&lt;/genre&gt;</span>
+   <span class="nt">&lt;price&gt;</span>44.95<span class="nt">&lt;/price&gt;</span>
+   <span class="nt">&lt;publish_date&gt;</span>2000-10-01<span class="nt">&lt;/publish_date&gt;</span>
+   <span class="nt">&lt;description&gt;</span>An in-depth look at creating applications with XML.<span class="nt">&lt;/description&gt;</span>
+<span class="nt">&lt;/book&gt;</span>
+</code></pre>
+          </div>
+        </div>
+        <div class="nav-docs">
+          <div>
+            <h3>EXAMPLES</h3>
+            <ul>
+              <!-- 2017-04-08 08:57:37 -0400 -->
+              <li>
+                <a class="active" href="/examples/">Overview</a>
+                <ul>
+                  <li><a href="/examples/#special-characters">Special Characters</a></li>
+                  <li><a href="/examples/#backslash-escapes">Backslash Escapes</a></li>
+                </ul>
+              </li>
+              <!-- 2017-04-08 08:57:37 -0400 -->
+              <li>
+                <a class="active" href="/examples/block/">Block Elements</a>
+                <ul>
+                  <li><a href="/examples/block/#paragraphs-and-line-breaks">Paragraphs and Line Breaks</a></li>
+                  <li><a href="/examples/block/#blockquotes">Blockquotes</a></li>
+                  <li><a href="/examples/block/#lists">Lists</a></li>
+                  <li><a href="/examples/block/#code-blocks">Code Blocks</a></li>
+                  <li><a href="/examples/block/#horizontal-rules">Horizontal Rules</a></li>
+                </ul>
+              </li>
+              <!-- 2017-04-08 08:57:37 -0400 -->
+              <li>
+                <a class="active" href="/examples/span/">Span Elements</a>
+                <ul>
+                  <li><a href="/examples/span/#links">Links</a></li>
+                  <li><a href="/examples/span/#emphasis">Emphasis</a></li>
+                  <li><a href="/examples/span/#html">HTML</a></li>
+                  <li><a href="/examples/span/#code">Code</a></li>
+                  <li><a href="/examples/span/#images">Images</a></li>
+                </ul>
+              </li>
+              <!-- 2017-04-08 08:57:37 -0400 -->
+              <li>
+                <a class="active" href="/examples/highlighter/">Syntax Highlighter</a>
+                <ul>
+                  <li><a href="/examples/highlighter/#apache">Apache</a></li>
+                  <li><a href="/examples/highlighter/#c">C</a></li>
+                  <li><a href="/examples/highlighter/#gradle">Gradle</a></li>
+                  <li><a href="/examples/highlighter/#groovy">Groovy</a></li>
+                  <li><a href="/examples/highlighter/#html">HTML</a></li>
+                  <li><a href="/examples/highlighter/#http">HTTP</a></li>
+                  <li><a href="/examples/highlighter/#ini-files">.INI files</a></li>
+                  <li><a href="/examples/highlighter/#java">Java</a></li>
+                  <li><a href="/examples/highlighter/#javascript">Javascript</a></li>
+                  <li><a href="/examples/highlighter/#json">Json</a></li>
+                  <li><a href="/examples/highlighter/#markdown">Markdown</a></li>
+                  <li><a href="/examples/highlighter/#objective-c">Objective C</a></li>
+                  <li><a href="/examples/highlighter/#php">PHP</a></li>
+                  <li><a href="/examples/highlighter/#protobuf">Protobuf</a></li>
+                  <li><a href="/examples/highlighter/#ruby">Ruby</a></li>
+                  <li><a href="/examples/highlighter/#scala">Scala</a></li>
+                  <li><a href="/examples/highlighter/#sass">SASS</a></li>
+                  <li><a href="/examples/highlighter/#scss">SCSS</a></li>
+                  <li><a href="/examples/highlighter/#shell">Shell</a></li>
+                  <li><a href="/examples/highlighter/#sql">SQL</a></li>
+                  <li><a href="/examples/highlighter/#swift">Swift</a></li>
+                  <li><a href="/examples/highlighter/#visual-basic">Visual Basic</a></li>
+                  <li><a href="/examples/highlighter/#xml">XML</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
