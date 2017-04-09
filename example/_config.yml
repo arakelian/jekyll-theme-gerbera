@@ -3,8 +3,8 @@ tagline:  Gerbera theme for Jekyll inspired by Facebook's GraphQL documentation
 version:  2.0.0
 
 description: >
-   A documentation theme for Jekyll Inspired by Facebook's <a href="http://graphql.org" target="_blank">GraphQL documentation</a>. 
-   Made by <a href="https://github.com/arakelian" target="_blank">Greg Arakelian</a>.
+   A documentation theme for Jekyll Inspired by Facebook's <a href="http://graphql.org">GraphQL documentation</a>. 
+   Made by <a href="https://github.com/arakelian">Greg Arakelian</a>.
 
 author: Greg Arakelian
 email: greg@arakelian.com
@@ -19,7 +19,7 @@ markdown: kramdown
 highlighter: rouge
 
 sass:
-  style: compressed
+#  style: compressed
 
 collections:
   learn:

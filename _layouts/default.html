@@ -15,7 +15,7 @@ layout: bare
 			    {% assign sorted_docs = docs | sort:"order","last" %}
 			    {% for doc in sorted_docs %}
 			    	{% if last_url == page.url %}
-					   	<a class="read-next" href="{{doc.url}}">
+					   	<a class="read-next" href="{{ site.baseurl }}{{ doc.url }}">
 					   		<span class="read-next-continue">Continue Reading →</span>
 					   		<span class="read-next-title">{{doc.title}}</span>
 					   	</a>

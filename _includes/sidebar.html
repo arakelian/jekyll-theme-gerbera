@@ -11,11 +11,11 @@
 			     	{% if document.title != null %}
 						<li>
 							{% assign subheadings = document.subheadings %}
-							<a class="active" href="{{ document.url }}">{{ document.title }}</a>
+							<a class="active" href="{{ site.baseurl }}{{ document.url }}">{{ document.title }}</a>
 							{% if subheadings.size != 0 %}
 								<ul>
 								    {% for subheading in subheadings %}
-										<li><a href="{{ subheading.url }}">{{ subheading.title }}</a></li>
+										<li><a href="{{ site.baseurl }}{{ subheading.url }}">{{ subheading.title }}</a></li>
 								    {% endfor %}
 								</ul>
 							{% endif %} 

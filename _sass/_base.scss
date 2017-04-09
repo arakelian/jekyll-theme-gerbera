@@ -194,10 +194,10 @@ footer {
       padding: 10px;
       width: 50px;
       height: 50px;
-      background: url("img/logo-gray.svg") no-repeat content-box;
+      background: url("#{$baseurl}/assets/img/logo-gray.svg") no-repeat content-box;
 
       &:hover, &:focus {
-        background-image: url("img/logo.svg");
+        background-image: url("#{$baseurl}/assets/img/logo.svg");
       }
 
       @media screen and (max-width: 740px) {
