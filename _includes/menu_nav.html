@@ -1,14 +1,14 @@
 <nav>
-	{% assign ordered_collections = site.collections | sort:"order","last" %}
-	{% for c in ordered_collections %}
-		{% if c.indexPage == nil %}
-			{% assign firstDoc = c.docs | sort:"order","last" | first %}
-			{% if c.title != nil %}
-				<a href="{{ site.baseurl }}{{ firstDoc.url }}">{{c.title}}</a>
-			{% endif %}
-		{% else %}
-			<a href="{{ site.baseurl }}{{ c.indexPage }}">{{c.title}}</a>
-		{% endif %}
-	{% endfor %}
-	<a href="{{site.github.repo}}">Github</a>
+    {% assign ordered_collections = site.collections | sort:"order","last" %}
+    {% for c in ordered_collections %}
+        {% if c.indexPage == nil %}
+            {% assign firstDoc = c.docs | sort:"order","last" | first %}
+            {% if c.title != nil %}
+                <a href="{{ site.baseurl }}{{ firstDoc.url }}">{{c.title}}</a>
+            {% endif %}
+        {% else %}
+            <a href="{{ site.baseurl }}{{ c.indexPage }}">{{c.title}}</a>
+        {% endif %}
+    {% endfor %}
+    <a href="{{site.github.repo}}">Github</a>
 </nav>

@@ -1,28 +1,28 @@
 {% assign collection = page.collection %}
 {% assign docs = site.[collection] %}
 {% if docs %}
-	{% assign sorted_docs = docs | sort:"order","last" %}
-	<div class="nav-docs">
-		<div>
-			<h3>{{ collection | upcase }}</h3>
-			<ul>
-			     {% for document in sorted_docs %}
-			     	<!-- {{ document.date }} -->
-			     	{% if document.title != null %}
-						<li>
-							{% assign subheadings = document.subheadings %}
-							<a class="active" href="{{ site.baseurl }}{{ document.url }}">{{ document.title }}</a>
-							{% if subheadings.size != 0 %}
-								<ul>
-								    {% for subheading in subheadings %}
-										<li><a href="{{ site.baseurl }}{{ subheading.url }}">{{ subheading.title }}</a></li>
-								    {% endfor %}
-								</ul>
-							{% endif %} 
-						</li>
-					{% endif %}
-				{% endfor %}
-			</ul>
-		</div>
-	</div>    
+    {% assign sorted_docs = docs | sort:"order","last" %}
+    <div class="nav-docs">
+        <div>
+            <h3>{{ collection | upcase }}</h3>
+            <ul>
+                 {% for document in sorted_docs %}
+                 	<!-- {{ document.date }} -->
+                 	{% if document.title != null %}
+                        <li>
+                            {% assign subheadings = document.subheadings %}
+                            <a class="active" href="{{ site.baseurl }}{{ document.url }}">{{ document.title }}</a>
+                            {% if subheadings.size != 0 %}
+                                <ul>
+                                    {% for subheading in subheadings %}
+                                        <li><a href="{{ site.baseurl }}{{ subheading.url }}">{{ subheading.title }}</a></li>
+                                    {% endfor %}
+                                </ul>
+                            {% endif %}
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
 {% endif %}
