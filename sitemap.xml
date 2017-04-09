@@ -2,43 +2,43 @@
   <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
       <loc>/jekyll-theme-gerbera/examples/block/</loc>
-      <lastmod>2017-04-09T11:20:39-04:00</lastmod>
+      <lastmod>2017-04-09T12:28:47-04:00</lastmod>
     </url>
     <url>
       <loc>/jekyll-theme-gerbera/examples/highlighter/</loc>
-      <lastmod>2017-04-09T11:20:39-04:00</lastmod>
+      <lastmod>2017-04-09T12:28:47-04:00</lastmod>
     </url>
     <url>
       <loc>/jekyll-theme-gerbera/examples/</loc>
-      <lastmod>2017-04-09T11:20:39-04:00</lastmod>
+      <lastmod>2017-04-09T12:28:47-04:00</lastmod>
     </url>
     <url>
       <loc>/jekyll-theme-gerbera/examples/span/</loc>
-      <lastmod>2017-04-09T11:20:39-04:00</lastmod>
+      <lastmod>2017-04-09T12:28:47-04:00</lastmod>
     </url>
     <url>
       <loc>/jekyll-theme-gerbera/learn/build/</loc>
-      <lastmod>2017-04-09T11:20:39-04:00</lastmod>
+      <lastmod>2017-04-09T12:28:47-04:00</lastmod>
     </url>
     <url>
       <loc>/jekyll-theme-gerbera/learn/</loc>
-      <lastmod>2017-04-09T11:20:39-04:00</lastmod>
+      <lastmod>2017-04-09T12:28:47-04:00</lastmod>
     </url>
     <url>
       <loc>/jekyll-theme-gerbera/learn/running/</loc>
-      <lastmod>2017-04-09T11:20:39-04:00</lastmod>
+      <lastmod>2017-04-09T12:28:47-04:00</lastmod>
     </url>
     <url>
-      <loc>/jekyll-theme-gerbera/blog/2017/02/01/example-2</loc>
-      <lastmod>2017-02-01T00:00:00-05:00</lastmod>
+      <loc>/jekyll-theme-gerbera/blog/2017/04/01/initial</loc>
+      <lastmod>2017-04-01T00:00:00-04:00</lastmod>
     </url>
     <url>
-      <loc>/jekyll-theme-gerbera/blog/2017/03/25/example-1</loc>
-      <lastmod>2017-03-25T00:00:00-04:00</lastmod>
+      <loc>/jekyll-theme-gerbera/blog/2017/04/08/rename</loc>
+      <lastmod>2017-04-08T00:00:00-04:00</lastmod>
     </url>
     <url>
-      <loc>/jekyll-theme-gerbera/blog/2017/03/29/introduction</loc>
-      <lastmod>2017-03-29T00:00:00-04:00</lastmod>
+      <loc>/jekyll-theme-gerbera/blog/2017/04/09/github-pages</loc>
+      <lastmod>2017-04-09T00:00:00-04:00</lastmod>
     </url>
     <url>
       <loc>/jekyll-theme-gerbera/404.html</loc>
