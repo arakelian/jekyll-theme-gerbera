@@ -1,52 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
   <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-      <loc>/examples/block/</loc>
-      <lastmod>2017-04-08T08:57:37-04:00</lastmod>
+      <loc>/jekyll-theme-gerbera/examples/block/</loc>
+      <lastmod>2017-04-09T09:35:36-04:00</lastmod>
     </url>
     <url>
-      <loc>/examples/highlighter/</loc>
-      <lastmod>2017-04-08T08:57:37-04:00</lastmod>
+      <loc>/jekyll-theme-gerbera/examples/highlighter/</loc>
+      <lastmod>2017-04-09T09:35:36-04:00</lastmod>
     </url>
     <url>
-      <loc>/examples/</loc>
-      <lastmod>2017-04-08T08:57:37-04:00</lastmod>
+      <loc>/jekyll-theme-gerbera/examples/</loc>
+      <lastmod>2017-04-09T09:35:36-04:00</lastmod>
     </url>
     <url>
-      <loc>/examples/span/</loc>
-      <lastmod>2017-04-08T08:57:37-04:00</lastmod>
+      <loc>/jekyll-theme-gerbera/examples/span/</loc>
+      <lastmod>2017-04-09T09:35:36-04:00</lastmod>
     </url>
     <url>
-      <loc>/learn/build/</loc>
-      <lastmod>2017-04-08T08:57:37-04:00</lastmod>
+      <loc>/jekyll-theme-gerbera/learn/build/</loc>
+      <lastmod>2017-04-09T09:35:36-04:00</lastmod>
     </url>
     <url>
-      <loc>/learn/</loc>
-      <lastmod>2017-04-08T08:57:37-04:00</lastmod>
+      <loc>/jekyll-theme-gerbera/learn/</loc>
+      <lastmod>2017-04-09T09:35:36-04:00</lastmod>
     </url>
     <url>
-      <loc>/learn/running/</loc>
-      <lastmod>2017-04-08T08:57:37-04:00</lastmod>
+      <loc>/jekyll-theme-gerbera/learn/running/</loc>
+      <lastmod>2017-04-09T09:35:36-04:00</lastmod>
     </url>
     <url>
-      <loc>/blog/2017/02/01/example-2</loc>
+      <loc>/jekyll-theme-gerbera/blog/2017/02/01/example-2</loc>
       <lastmod>2017-02-01T00:00:00-05:00</lastmod>
     </url>
     <url>
-      <loc>/blog/2017/03/25/example-1</loc>
+      <loc>/jekyll-theme-gerbera/blog/2017/03/25/example-1</loc>
       <lastmod>2017-03-25T00:00:00-04:00</lastmod>
     </url>
     <url>
-      <loc>/blog/2017/03/29/introduction</loc>
+      <loc>/jekyll-theme-gerbera/blog/2017/03/29/introduction</loc>
       <lastmod>2017-03-29T00:00:00-04:00</lastmod>
     </url>
     <url>
-      <loc>/404.html</loc>
+      <loc>/jekyll-theme-gerbera/404.html</loc>
     </url>
     <url>
-      <loc>/blog/</loc>
+      <loc>/jekyll-theme-gerbera/blog/</loc>
     </url>
     <url>
-      <loc>/</loc>
+      <loc>/jekyll-theme-gerbera/</loc>
     </url>
   </urlset>
