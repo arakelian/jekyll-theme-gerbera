@@ -1,5 +1,5 @@
 #!/bin/bash
-jekyll build --source example/ --baseurl /jekyll-theme-gerbera
+jekyll build --source example/ --destination example/_site --baseurl /jekyll-theme-gerbera
 RETVAL=$?
 if (($RETVAL > 0)); then
     exit 1
