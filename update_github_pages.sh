@@ -14,10 +14,17 @@ if git ls-remote --exit-code origin "refs/heads/gh-pages" ; then
 fi
 
 if git show-ref --verify --quiet "refs/heads/gh-pages" ; then
+    echo "Switching to gh-pages"
     git symbolic-ref HEAD refs/heads/gh-pages
     git --work-tree "example/_site" reset --mixed --quiet
+
+    echo "Adding all files"
     git --work-tree "example/_site" add --all
+
+    echo "Committing changes (locally)"
     git --work-tree "example/_site" commit -m "Committing"
+
+    echo "Switching to master"
     git symbolic-ref HEAD refs/heads/master
     git reset --mixed --quiet
 fi
