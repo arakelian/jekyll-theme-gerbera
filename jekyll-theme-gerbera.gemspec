@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-gerbera"
-  spec.version       = "2.1.2"
+  spec.version       = "2.1.3"
   spec.authors       = ["Greg Arakelian"]
   spec.email         = ["greg@arakelian.com"]
 
@@ -28,7 +28,7 @@ https://github.com/arakelian/jekyll-theme-gerbera
 
 msg
 
-  spec.add_runtime_dependency "jekyll", "~> 3.4"
+  spec.add_runtime_dependency "jekyll", "~> 3.6.2"
   spec.add_runtime_dependency "jekyll-feed", "~> 0.9.2"
   spec.add_runtime_dependency "jekyll-sitemap", '~> 1.1', '>= 1.1.1'
   spec.add_runtime_dependency "jekyll-tidy", "~> 0.2.2"
