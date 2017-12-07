@@ -9,23 +9,23 @@ layout: bare
             {{ content }}
 
             {% assign collection = page.collection %}
-            {% assign docs = site.[collection] %}
+            {% assign docs = site[collection] %}
             {% if docs %}
                 {% assign last_url = "" %}
                 {% assign sorted_docs = docs | sort:"order","last" %}
                 {% for doc in sorted_docs %}
                     {% if last_url == page.url %}
-                       	<a class="read-next" href="{{ site.baseurl }}{{ doc.url }}">
-                       		<span class="read-next-continue">Continue Reading →</span>
-                       		<span class="read-next-title">{{doc.title}}</span>
-                       	</a>
-                       	{% break %}
+                        <a class="read-next" href="{{ site.baseurl }}{{ doc.url }}">
+                            <span class="read-next-continue">Continue Reading →</span>
+                            <span class="read-next-title">{{doc.title}}</span>
+                        </a>
+                        {% break %}
                     {% endif %}
                     {% assign last_url = doc.url %}
                 {% endfor %}
             {% endif %}
         </div>
 
- 		{% include sidebar.html %}
+        {% include sidebar.html %}
     </div>
 </section>
