@@ -2,12 +2,13 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-gerbera"
-  spec.version       = "2.1.3"
+  spec.version       = "2.1.4"
   spec.authors       = ["Greg Arakelian"]
   spec.email         = ["greg@arakelian.com"]
-
   spec.summary       = "Document theme for Jekyll inspired by Facebook GraphQL documentation"
   spec.homepage      = "https://github.com/arakelian/jekyll-theme-gerbera"
+
+  spec.platform      = Gem::Platform::RUBY
   spec.license       = "MIT"
 
   spec.metadata["plugin_type"] = "theme"
