@@ -31,7 +31,7 @@ msg
   spec.add_runtime_dependency "jekyll", "~> 3.4"
   spec.add_runtime_dependency "jekyll-feed", "~> 0.8"
   spec.add_runtime_dependency "jekyll-sitemap", "~> 0.12"
-  spec.add_runtime_dependency "jekyll-tidy"
+  spec.add_runtime_dependency "jekyll-tidy", "~> 0.2.2"
 
   spec.add_development_dependency "bundler", "~> 1.13"
   spec.add_development_dependency "rake", "~> 12.0"
