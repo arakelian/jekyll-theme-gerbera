@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-theme-gerbera"
-  spec.version       = "2.1.4"
+  spec.version       = "2.5.0"
   spec.authors       = ["Greg Arakelian"]
   spec.email         = ["greg@arakelian.com"]
   spec.summary       = "Document theme for Jekyll inspired by Facebook GraphQL documentation"
@@ -22,10 +22,10 @@ Gem::Specification.new do |spec|
 
   spec.post_install_message = <<-msg
 
-----------------------------------------------
+----------------------------------------------------
 Thank you for installing jekyll-theme-gerbera!
 https://github.com/arakelian/jekyll-theme-gerbera
-----------------------------------------------
+----------------------------------------------------
 
 msg
 
@@ -35,5 +35,4 @@ msg
   spec.add_runtime_dependency "jekyll-tidy", "~> 0.2.2"
 
   spec.add_development_dependency "bundler", "~> 1.13"
-  spec.add_development_dependency "rake", "~> 12.0"
 end
