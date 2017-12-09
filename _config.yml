@@ -39,10 +39,6 @@ description: >
 permalink: /:categories/:year/:month/:day/:title/
 
 collections:
-  learn:
-    order: 1
-    title: "Learn"
-    output: true
   examples:
     order: 2
     title: "Examples"
